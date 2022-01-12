@@ -1,5 +1,5 @@
 # Vue_smallrunze
-remplate from [web](https://www.jianshu.com/p/39e3a97707a2)
+template from [web](https://www.jianshu.com/p/39e3a97707a2)
 # in user
 enter the fold,and run in a terminal
 ```
