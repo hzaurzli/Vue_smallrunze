@@ -29,7 +29,7 @@ export default {
       Ative:true
     }
   },
-
+  // 定义全局搜索,定义个空组件返回本组件
   methods:{
     click(){
       var path = '/table';
