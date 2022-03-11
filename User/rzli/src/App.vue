@@ -34,6 +34,7 @@ export default {
     click(){
       var path = '/table';
       if (path == this.$route.path) {
+        // this.$refs.getValue.value获取input搜索框的值
         var aa = this.$refs.getValue.value;
         this.$router.push({name:'search',query:aa});
       }
