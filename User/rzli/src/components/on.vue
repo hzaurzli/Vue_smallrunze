@@ -6,6 +6,10 @@
     <div>
       <img :src= "img">
     </div>
+    <!--利用v-show来控制是否添加loading效果，v-show不需要绑定事件-->
+    <div v-show="is">
+      <img src="../assets/loader.gif">
+    </div>
 	</div>
 </template>
 
@@ -16,15 +20,18 @@ export default {
 		return {
 			data: '',
       word:'',
-      img: ''
-
+      img: '',
+      is: true
 		}
 	},
 	methods: {},
-  // 设置this.word动态loading效果
+  // 设置this.word添加html文本代码
   created(){
+	  this.is = false;
+	  console.log(this.is);
 	  var word = '<p>aaaaa</p>';
 	  this.word = word;
+	  // this.is = false;
 	  this.img = "http://localhost:8080/src/assets/logo.png";
 	  console.log(word);
   },
