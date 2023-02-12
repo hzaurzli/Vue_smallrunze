@@ -29,7 +29,8 @@ export default {
       Ative:true
     }
   },
-  // 定义全局搜索,定义个空组件 search.vue,然后由 search.vue 返回本组件
+  // 定义全局搜索,定义个空组件 search.vue,然后由 search.vue 返回本组件,这样如果位于 table 页面,则进入空组件 search.vue,然后返回 table 页面，类似于刷新;
+  // 如果是其他页面搜索则跳转为 table 页面
   methods:{
     click(){
       var path = '/table';
